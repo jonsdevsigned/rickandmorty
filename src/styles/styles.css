@@ -1,0 +1,200 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.App {
+  text-align: center;
+  background: #002c3a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: Tahoma;
+}
+
+.container{
+  width: 90%;
+  background: #00222c;
+  box-shadow: 0px 0px 20px rgba(75, 255, 4, 0.336) ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------HEAD---------- */
+.containerBanner{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 13%;
+  width: 100%;
+}
+
+.bannerHead{
+  width: 100%;
+}
+
+.titleBanner{
+  width: 50vw;
+  position: absolute;
+  top: 19.3vw
+}
+
+.title{
+  color: #9EE201;
+  position: absolute;
+  font-size: 6.5vw;
+  font-family: 'Leelawadee';
+  font-weight: 700;
+  left: 36vw;
+  bottom: 0;
+
+}
+
+/* ---------FORM---------- */
+ .form{
+  position: relative;
+  width: 72%;
+  max-width: 650px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15PX 0 25px 0;
+}
+
+.inputsearch{
+  border: none;
+  width: 100%;
+  background: #ebebeb;
+  border-radius: 80px;
+  height: 32px;
+  outline: none;
+  padding: 0 15px;
+}
+
+.buttonsearch{
+  border: none;
+  position: absolute;
+  width: 80px;
+  height: 32px;
+  border-radius: 50px;
+  background: #9EE201;
+  right: 0;
+  font-family: tahoma;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.buttonsearch:hover{
+  background-color: #4c6b02;
+}
+
+/* ---------LOCATION---------- */
+
+.containerLocation{
+  padding-bottom: 13px;
+  border-top: #9EE201 1px solid;
+  border-bottom: #9EE201 1px solid;
+  width: 75%;
+  max-width: 600px;
+}
+
+.containerLocation > p{
+  display: inline-block;
+  padding: 7px 30px;
+
+}
+
+.containerLocation > p > b{
+  font-weight: 500;
+  color: #9EE201;
+}
+
+/* ---------ALL RESIDENTS---------- */
+
+.containerResidents{
+  padding-bottom: 35px;
+}
+
+.containerResidents > ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+
+/* ---------CARD RESIDENT---------- */
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #9EE201 3px solid;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 0px 10px #9EE201;
+  font-size: 15px;
+  width: 90%;
+}
+
+.card > img{
+  border-radius: 50%;
+  width: 25vw;
+  min-width: 150px;
+}
+
+.containerAllCard > ul{
+  list-style: none;
+}
+
+.containerInfoCard{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ---------FOOTER---------- */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #002c3a;
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+  
+}
+
+@media only screen and ( min-width: 600px ){
+
+  .containerResidents > ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .card > img{
+    max-width: 120px;  
+  }
+
+  .containerInfoCard{
+    display: grid;
+  }
+
+}
